@@ -1,0 +1,21 @@
+# Local configuration and secrets
+pixelpost_config.json
+
+# Python cache and temporary files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyInstaller build folders and files
+build/
+dist/
+*.spec
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE settings
+.vscode/
+.idea/
