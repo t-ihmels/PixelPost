@@ -42,9 +42,9 @@ pip install pystray Pillow requests keyboard zeroconf
 
 To create a standalone `.exe` for Windows, use PyInstaller:
 
- ` ``bash
-pyinstaller --noconfirm --onefile --windowed --name "PixelPost" --collect-all zeroconf pixelpost.py
- ` ``
+ ```bash
+python -m PyInstaller --noconfirm --onefile --windowed --name "PixelPost" --icon="icon.ico" --collect-all zeroconf pixelpost.py
+ ```
 
 > [!IMPORTANT]
 > Because the `keyboard` library hooks into system-level inputs, the compiled EXE may require **Run as Administrator** to capture hotkeys while certain high-privilege windows (like Task Manager) are in focus.
